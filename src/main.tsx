@@ -1,6 +1,6 @@
+import App from "@/route/App";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import App from "./route/App";
 
 const rootElement = document.getElementById("root");
 
