@@ -1,6 +1,7 @@
 import logo from "@/assets/solterra-logo.png";
 import { Header } from "@/components/Header";
 import { Works } from "@/components/Works";
+import { GitHub } from "@/components/GitHub";
 
 export const Portfolio = () => {
 	return (
@@ -20,6 +21,7 @@ export const Portfolio = () => {
 					</h2>
 				</div>
 				<Works />
+				<GitHub />
 			</div>
 		</div>
 	);
