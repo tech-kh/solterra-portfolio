@@ -6,16 +6,16 @@ export const Header = () => {
 		<div className="w-full h-16 bg-white flex items-center space-x-1">
 			<img src={logo} alt="logo" className="max-h-16 mt-3" />
 			<Button variant="link" className="text-xl italic text-sky-500 ">
-				<a href="/">Home</a>
+				<a href="#test">Home</a>
 			</Button>
 			<Button variant="link" className="text-xl italic text-sky-500">
-				<a href="/">Works</a>
+				<a href="#test">Works</a>
 			</Button>
 			<Button variant="link" className="text-xl italic text-sky-500">
-				<a href="/">GitHub</a>
+				<a href="#test">GitHub</a>
 			</Button>
 			<Button variant="link" className="text-xl italic text-sky-500">
-				<a href="/">About</a>
+				<a href="#test">About</a>
 			</Button>
 		</div>
 	);
