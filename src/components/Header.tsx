@@ -12,7 +12,7 @@ export const Header = () => {
 				<a href="#works">Works</a>
 			</Button>
 			<Button variant="link" className="text-xl italic text-sky-500">
-				<a href="#test">GitHub</a>
+				<a href="#github">GitHub</a>
 			</Button>
 			<Button variant="link" className="text-xl italic text-sky-500">
 				<a href="#test">About</a>
