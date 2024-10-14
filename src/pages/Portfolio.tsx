@@ -1,7 +1,7 @@
 import logo from "@/assets/solterra-logo.png";
+import { GitHub } from "@/components/GitHub";
 import { Header } from "@/components/Header";
 import { Works } from "@/components/Works";
-import { GitHub } from "@/components/GitHub";
 
 export const Portfolio = () => {
 	return (
