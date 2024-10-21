@@ -1,4 +1,5 @@
 import github from "@/assets/github.jpg";
+import * as React from 'react';
 
 export const GitHub = () => {
 	return (

@@ -2,6 +2,7 @@ import logo from "@/assets/solterra-logo.png";
 import { GitHub } from "@/components/GitHub";
 import { Header } from "@/components/Header";
 import { Works } from "@/components/Works";
+import * as React from 'react';
 
 export const Portfolio = () => {
 	return (

@@ -1,5 +1,6 @@
 import logo from "@/assets/solterra-logo.png";
 import { Button } from "@/components/ui/button";
+import * as React from 'react';
 
 export const Header = () => {
 	return (

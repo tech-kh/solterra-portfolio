@@ -2,6 +2,7 @@ import works_bookreview from "@/assets/book-review-app.jpg";
 import works_solterra from "@/assets/solterra-portfolio-site.jpg";
 import works_thread from "@/assets/thread-app.jpg";
 import works_todo from "@/assets/todo.jpg";
+import * as React from 'react';
 
 export const Works = () => {
 	return (

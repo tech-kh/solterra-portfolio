@@ -1,5 +1,4 @@
 const path = require('path');
-const { Extension } = require('typescript');
 
 module.exports = {
   target: 'node',
@@ -7,11 +6,8 @@ module.exports = {
   entry: './server/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'server.js',
-    chunkFormat: 'module'
-  },
-  experiments: {
-    outputModule: true,
+    filename: 'server.cjs',
+    libraryTarget: 'commonjs2',
   },
   module: {
     rules: [
@@ -27,11 +23,11 @@ module.exports = {
         use: ["style-loader", "css-loader"],
       },
       {
-        test: /\.(png|jpg|jpeg|gif|svg)$/, // 画像ファイルを追加
+        test: /\.(png|jpg|jpeg|gif|svg)$/,
         use: {
           loader: 'file-loader',
           options: {
-            name: '[path][name].[ext]', // 出力名
+            name: '[path][name].[ext]',
           },
         },
       },
@@ -40,7 +36,7 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.ts', '.jsx', '.tsx'],
     alias: {
-      '@': path.resolve(__dirname, 'src')
-    }
-  }
+      '@': path.resolve(__dirname, 'src'),
+    },
+  },
 };
