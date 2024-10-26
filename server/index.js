@@ -3,6 +3,7 @@ import React from "react";
 import { renderToString } from "react-dom/server";
 import { StaticRouter } from 'react-router-dom/server.js';
 import  App  from "../src/route/App.tsx";
+import "../src/css/app.css";
 
 const app = express();
 const port = 9000;
@@ -22,8 +23,7 @@ app.get("/", (req, res) => {
       <html>
         <head>
           <title>React App</title>
-          <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> <!-- 追加 -->
-          <script type="text/babel" src="/server.js"></script>
+          <link href="../css/tailwind.css" rel="stylesheet" />
         </head>
         <body>
           <div id="root">${content}</div>

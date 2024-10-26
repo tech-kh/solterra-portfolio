@@ -1,4 +1,5 @@
 const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   target: 'node',
@@ -20,7 +21,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"],
+        use: [MiniCssExtractPlugin.loader,"css-loader",'postcss-loader'],
       },
       {
         test: /\.(png|jpg|jpeg|gif|svg)$/,
@@ -39,4 +40,9 @@ module.exports = {
       '@': path.resolve(__dirname, 'src'),
     },
   },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: 'css/tailwind.css', // 出力されるCSSファイル名
+    }),
+  ]
 };
